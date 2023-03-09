@@ -1,0 +1,97 @@
+#root {
+  max-width : 1280px;
+  margin    : 0 auto;
+  padding   : 2rem;
+  text-align: center;
+}
+
+.logo {
+  height     : 6em;
+  padding    : 1.5em;
+  will-change: filter;
+  transition : filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.input-space {
+  display        : flex;
+  width          : 100%;
+  justify-content: space-around;
+  align-items    : center;
+  border         : 1px solid #dfdfdf;
+  padding        : 5px;
+  border-radius  : 4px;
+}
+
+.input-space svg {
+  cursor: pointer;
+}
+
+.input-add {
+  width           : 100%;
+  height          : 35px;
+  border          : none;
+  background-color: transparent;
+  text-align      : center;
+  font-size       : 1.3em;
+}
+
+.input-add:focus {
+  outline: none;
+}
+
+.players {
+  margin: 20px 0;
+}
+
+.card-player {
+  display        : flex;
+  align-items    : center;
+  width          : 100%;
+  height         : 45px;
+  justify-content: space-evenly;
+  border         : 1px solid #dfdfdf;
+  border-radius  : 4px;
+  padding        : 5px;
+  margin-bottom  : 10px;
+  color          : #fff;
+}
+
+.card-player .name {
+  width: 33%;
+}
+
+.card-player svg {
+  cursor: pointer;
+}
